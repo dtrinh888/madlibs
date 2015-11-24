@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="">
 <head>
 	<meta charset="UTF-8">
 	<title>MadLibs</title>
+
 	<script src="https://code.angularjs.org/1.3.10/angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<h1>Provide the following keywords:</h1>
 	<div>
+		
 		<ul>
-			<li><input type="text" ng-model="maleName" placeholder="Male Name" /></li>
+			<li><input type="text" placeholder="Male Name" ng-model="maleName"  /></li>
 			<li><input type="text" ng-model="dirtyTask" placeholder="Dirty Task" /></li>
 			<li><input type="text" ng-model="obnoxCeleb" placeholder="Obnoxious Celebrity" /></li>
 			<li><input type="text" ng-model="jobTitle" placeholder="Job Title" /></li>
@@ -22,7 +25,8 @@
 	</div>
 	<hr>
 	<div>
-		<p>{{ maleName }} was a {{ jobTitle }} who loved technology. Although he loved parts of his, he absolutely hated {{ tediousTask }} and {{ dirtyTask }}. So, {{ maleName }} met with his life mentor
+		<p>{{ maleName }} was a {{ jobTitle }} who loved technology. Although he loved parts of his job, he absolutely hated {{ tediousTask }} and {{ dirtyTask }}. So, {{ maleName }} met with his life mentor {{ celebrity }} who told him to learn how to {{ uselessSkill }} with Thinkful. Thinkful didn't offer a course on {{ uselessSkill }} so he studied programming instead.</p>
+		<p>What a great decision! With his new skills, {{ maleName }} built a(n) {{ adjective }} robot named {{ obnoxCeleb }} that not only loved {{ dirtyTask }} but did it {{ hugeNumber }} times faster.</p>
 	</div>
 </body>
 </html>
