@@ -1,0 +1,35 @@
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	border: 5px solid black;
+}
+.nav-bar {
+	height: 200px;
+}
+.logo {
+	height: 200px;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.text-box {
+	width: 20px;
+	height: 5px;
+	text-decoration: underline;
+}
+
+hr {
+    border-top: 2px solid black;
+}
+
+.mad-lib-logo {
+	float: right;
+	text-align: center;
+	padding-right: 70px;
+}
+
+.mad-lib-logo h1 {
+	font-size: 2em;
+}
+
+

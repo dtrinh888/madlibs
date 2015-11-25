@@ -8,25 +8,42 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<h1>Provide the following keywords:</h1>
-	<div>
-		
-		<ul>
-			<li><input type="text" placeholder="Male Name" ng-model="maleName"  /></li>
-			<li><input type="text" ng-model="dirtyTask" placeholder="Dirty Task" /></li>
-			<li><input type="text" ng-model="obnoxCeleb" placeholder="Obnoxious Celebrity" /></li>
-			<li><input type="text" ng-model="jobTitle" placeholder="Job Title" /></li>
-			<li><input type="text" ng-model="celebrity" placeholder="Celebrity" /></li>
-			<li><input type="text" ng-model="hugeNumber" placeholder="Huge Number" /></li>
-			<li><input type="text" ng-model="tediousTask" placeholder="Tedious Task" /></li>
-			<li><input type="text" ng-model="uselessSkill" placeholder="Useless Skill" /></li>
-			<li><input type="text" ng-model="adjective" placeholder="Adjective" /></li>
-		</ul>
-	</div>
-	<hr>
-	<div>
-		<p>{{ maleName }} was a {{ jobTitle }} who loved technology. Although he loved parts of his job, he absolutely hated {{ tediousTask }} and {{ dirtyTask }}. So, {{ maleName }} met with his life mentor {{ celebrity }} who told him to learn how to {{ uselessSkill }} with Thinkful. Thinkful didn't offer a course on {{ uselessSkill }} so he studied programming instead.</p>
-		<p>What a great decision! With his new skills, {{ maleName }} built a(n) {{ adjective }} robot named {{ obnoxCeleb }} that not only loved {{ dirtyTask }} but did it {{ hugeNumber }} times faster.</p>
+	<div class="container">
+		<nav class="nav-bar">
+			<span class="logo">
+				<img src="https://photos-5.dropbox.com/t/2/AACClDZbxiQS3nPoFT7w5-ySzyGs9aDT4nNYyQ9cinwvKg/12/15152010/png/32x32/3/1448449200/0/2/mad-lib-happy-face.png/ENyarI8BGHogAigC/4_yurSVYWZDQ9wUwpmplPAidMTOH5JCZi5jHI8C-nTE?size_mode=3&size=1600x1200">
+			</span>
+			<span class="mad-lib-logo">
+				<div>
+					<img height="50%" width="50%" src="https://photos-3.dropbox.com/t/2/AACIUvEazlVLGB_Vt1dQRe1Q28Xl58U6UvLcp2pUQL2ikQ/12/15152010/png/32x32/3/1448449200/0/2/ng-mad-libs-logo.png/ENyarI8BGHogAigC/eS66ujO0LLT9gOuJ5Ix5W_W2SVabAIIWgWFZf2ubFZs?size_mode=3&size=1600x1200">
+				</div>
+				<div>
+					<h1>Automate This!</h1>
+				</div>
+			</span>
+
+		</nav>
+		<hr>
+		<h1>Provide the following keywords:</h1>
+		<div>		
+			<ul>
+				<li><input type="text" placeholder="Male Name" ng-model="maleName"  /></li>
+				<li><input type="text" ng-model="dirtyTask" placeholder="Dirty Task" /></li>
+				<li><input type="text" ng-model="obnoxCeleb" placeholder="Obnoxious Celebrity" /></li>
+				<li><input type="text" ng-model="jobTitle" placeholder="Job Title" /></li>
+				<li><input type="text" ng-model="celebrity" placeholder="Celebrity" /></li>
+				<li><input type="text" ng-model="hugeNumber" placeholder="Huge Number" /></li>
+				<li><input type="text" ng-model="tediousTask" placeholder="Tedious Task" /></li>
+				<li><input type="text" ng-model="uselessSkill" placeholder="Useless Skill" /></li>
+				<li><input type="text" ng-model="adjective" placeholder="Adjective" /></li>
+			</ul>
+		</div>
+		<hr>
+		<div>
+			<div>
+			<p><span class="text-box"><span ng-show="maleName"> {{ maleName }} </span><span ng-hide="maleName">Male Name</span></span> was a <span class="text-box"><span ng-show="jobTitle"> {{ jobTitle }} </span><span ng-hide="jobTitle">Job Title</span></span> who loved technology. Although he loved parts of his job, he absolutely hated <span class="text-box"><span ng-show="tediousTask"> {{ tediousTask }} </span><span ng-hide="tediousTask">Tedious Task</span></span> and <span class="text-box"><span ng-show="dirtyTask"> {{ dirtyTask }}</span><span ng-hide="dirtyTask">Dirty Task</span></span>. So, <span class="text-box"><span ng-show="maleName"> {{ maleName }} </span><span ng-hide="maleName">Male Name</span></span> met with his life mentor <span class="text-box"><span ng-show="celebrity">{{ celebrity }}</span><span ng-hide="celebrity">Celebrity</span></span> who told him to learn how to <span class="text-box"><span ng-show="uselessSkill"> {{ uselessSkill }}</span><span ng-hide="uselessSkill">Useless Skill</span></span> with Thinkful. Thinkful didn't offer a course on <span class="text-box"><span ng-show="uselessSkill"> {{ uselessSkill }}</span><span ng-hide="uselessSkill">Useless Skill</span></span> so he studied programming instead.</p>
+			<p>What a great decision! With his new skills, <span class="text-box"><span ng-show="maleName"> {{ maleName }} </span><span ng-hide="maleName">Male Name</span></span> built a(n) <span class="text-box"><span ng-show="adjective"> {{ adjective }} </span><span ng-hide="adjective">Adjective</span></span> robot named <span class="text-box"><span ng-show="obnoxCeleb">{{ obnoxCeleb }} </span><span ng-hide="obnoxCeleb">Obnoxious Celebrity</span></span> that not only loved <span class="text-box"><span ng-show="dirtyTask"> {{ dirtyTask }}</span><span ng-hide="dirtyTask">Dirty Task</span></span> but did it <span class="text-box"><span ng-show="hugeNumber"> {{ hugeNumber }}</span><span ng-hide="hugeNumber">Huge Number</span></span> times faster.</p></div>
+		</div>
 	</div>
 </body>
 </html>
