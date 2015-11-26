@@ -2,15 +2,16 @@
 	width: 1000px;
 	margin: 0 auto;
 	border: 5px solid black;
-	color: red;
 }
 .nav-bar {
-	height: 200px;
+	height: 212px;
 }
 .logo {
 	height: 200px;
-	margin-top: 10px;
-	padding-left: 10px;
+	padding: 10px;
+	width: 200px;
+	border-right: 2px solid black;
+	float: left;
 }
 
 .text-box {
