@@ -15,4 +15,20 @@ angular.module('myApp', ["ngMessages"])
 				$scope.wordInput = false;
 			}
 		};
+
+		$scope.resetForm = function(){
+			$scope.myMadlibs.$submitted = false;
+			$scope.myMadlibs.$setPristine(); 
+			$scope.myMadlibs.$setUntouched();
+			$scope.wordInput = true;
+			$scope.maleName = '';
+			$scope.dirtyTask = '';
+			$scope.obnoxCeleb = '';
+			$scope.jobTitle = '';
+			$scope.celebrity = '';
+			$scope.hugeNumber = '';
+			$scope.tediousTask = '';
+			$scope.uselessSkill = '';
+			$scope.adjective = '';
+		};
 	}]);

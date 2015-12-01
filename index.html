@@ -27,8 +27,8 @@
 
 		</nav>
 		<hr>
-		<h1>Provide the following keywords:</h1>
 		<div ng-show="wordInput">	
+			<h1>Provide the following keywords:</h1>
 			<form name="myMadlibs" ng-submit="showValid()" novalidate>	
 				<ul>
 					<li>
@@ -106,14 +106,15 @@
 				<input type="submit" value="Generate My MadLib" />
 			</form>
 		</div>
-		<hr>
 		<div>
 			<div ng-hide="wordInput">
 				<p><span class="text-box"><span ng-show="maleName"> {{ maleName }} </span><span ng-hide="maleName">Male Name</span></span> was a <span class="text-box"><span ng-show="jobTitle"> {{ jobTitle }} </span><span ng-hide="jobTitle">Job Title</span></span> who loved technology. Although he loved parts of his job, he absolutely hated <span class="text-box"><span ng-show="tediousTask"> {{ tediousTask }} </span><span ng-hide="tediousTask">Tedious Task</span></span> and <span class="text-box"><span ng-show="dirtyTask"> {{ dirtyTask }}</span><span ng-hide="dirtyTask">Dirty Task</span></span>. So, <span class="text-box"><span ng-show="maleName"> {{ maleName }} </span><span ng-hide="maleName">Male Name</span></span> met with his life mentor <span class="text-box"><span ng-show="celebrity">{{ celebrity }}</span><span ng-hide="celebrity">Celebrity</span></span> who told him to learn how to <span class="text-box"><span ng-show="uselessSkill"> {{ uselessSkill }}</span><span ng-hide="uselessSkill">Useless Skill</span></span> with Thinkful. Thinkful didn't offer a course on <span class="text-box"><span ng-show="uselessSkill"> {{ uselessSkill }}</span><span ng-hide="uselessSkill">Useless Skill</span></span> so he studied programming instead.</p>
 				<p>What a great decision! With his new skills, <span class="text-box"><span ng-show="maleName"> {{ maleName }} </span><span ng-hide="maleName">Male Name</span></span> built a(n) <span class="text-box"><span ng-show="adjective"> {{ adjective }} </span><span ng-hide="adjective">Adjective</span></span> robot named <span class="text-box"><span ng-show="obnoxCeleb">{{ obnoxCeleb }} </span><span ng-hide="obnoxCeleb">Obnoxious Celebrity</span></span> that not only loved <span class="text-box"><span ng-show="dirtyTask"> {{ dirtyTask }}</span><span ng-hide="dirtyTask">Dirty Task</span></span> but did it <span class="text-box"><span ng-show="hugeNumber"> {{ hugeNumber }}</span><span ng-hide="hugeNumber">Huge Number</span></span> times faster.</p>
-				<input type="button" ng-click="wordInput=true" value="Start Over" />
+				<button type="reset" ng-click="resetForm()">Start Over</button>
 			</div>
 		</div>
+		<p>Pristine: {{ myMadlibs.$pristine }}</p>
+		<pre>Touched: {{ myMadlibs.maleName.$touched }}</pre>
 	</div>
 </body>
 </html>
