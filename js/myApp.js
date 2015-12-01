@@ -1,4 +1,4 @@
-angular.module('myApp', [])
+angular.module('myApp', ["ngMessages"])
 	.controller('madLibCtrl', ['$scope', function($scope){
 		$scope.maleName = '';
 		$scope.dirtyTask = '';
@@ -9,4 +9,10 @@ angular.module('myApp', [])
 		$scope.tediousTask = '';
 		$scope.uselessSkill = '';
 		$scope.adjective = '';
+		$scope.wordInput=true;
+		$scope.showValid = function(){
+			if ($scope.myMadlibs.$valid) {
+				$scope.wordInput = false;
+			}
+		};
 	}]);
