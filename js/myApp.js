@@ -1,14 +1,14 @@
-angular.module('myApp', ["ngMessages"])
+angular.module('myApp', ['ngMessages', 'ngAnimate'])
 	.controller('madLibCtrl', ['$scope', function($scope){
-		$scope.maleName = '';
-		$scope.dirtyTask = '';
-		$scope.obnoxCeleb = '';
-		$scope.jobTitle = '';
-		$scope.celebrity = '';
-		$scope.hugeNumber = '';
-		$scope.tediousTask = '';
-		$scope.uselessSkill = '';
-		$scope.adjective = '';
+		$scope.maleName = 'test';
+		$scope.dirtyTask = 'test';
+		$scope.obnoxCeleb = 'test';
+		$scope.jobTitle = 'test';
+		$scope.celebrity = 'test';
+		$scope.hugeNumber = '5';
+		$scope.tediousTask = 'test';
+		$scope.uselessSkill = 'test';
+		$scope.adjective = 'test';
 		$scope.wordInput=true;
 		$scope.showValid = function(){
 			if ($scope.myMadlibs.$valid) {

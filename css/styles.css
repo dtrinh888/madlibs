@@ -1,5 +1,16 @@
-.container {
-	width: 1000px;
+.fade-show.ng-hide-add, .fade-show.ng-hide-remove {
+	transition: all linear 0.5s;
+}
+
+.fade-show {
+	opacity: 1;
+}
+
+.fade-show.ng-hide {
+	opacity: 0;
+}
+
+.madlib-container {
 	margin: 0 auto;
 	border: 5px solid black;
 }
@@ -7,9 +18,9 @@
 	height: 212px;
 }
 .logo {
-	height: 200px;
+	height: 235px;
 	padding: 10px;
-	width: 200px;
+	width: 225px;
 	border-right: 2px solid black;
 	float: left;
 }
@@ -28,6 +39,8 @@ hr {
 	float: right;
 	text-align: center;
 	padding-right: 70px;
+	padding-right: 150px;
+    padding-top: 30px;
 }
 
 .mad-lib-logo h1 {
@@ -35,6 +48,8 @@ hr {
 }
 
 
-.david {
-	color: black;
+.content {
+	width: 100%;
+	padding: 10px;
 }
+
