@@ -5,7 +5,7 @@ angular.module('myApp', ['ngMessages', 'ngAnimate'])
 		$scope.obnoxCeleb = 'test';
 		$scope.jobTitle = 'test';
 		$scope.celebrity = 'test';
-		$scope.hugeNumber = '5';
+		$scope.hugeNumber = 5;
 		$scope.tediousTask = 'test';
 		$scope.uselessSkill = 'test';
 		$scope.adjective = 'test';
